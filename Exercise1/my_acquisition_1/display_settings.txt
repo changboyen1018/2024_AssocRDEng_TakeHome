@@ -1,1 +1,0 @@
-{"All channel settings":{"Ignore outliers":false,"Log histogram":false,"Ignore outlier percentage":2,"Display all channels":true,"Autoscale all channels":true,"Sync all channels":false},"NO_CHANNEL_PRESENT":{"Gamma":1,"Active":true,"Min":693,"Max":5735,"Color":-1,"BitDepth":16,"Name":"NO_CHANNEL_PRESENT"}}
