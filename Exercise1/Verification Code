@@ -1,3 +1,5 @@
+## Self written verification code assisted by ChatGPT
+
 import numpy as np
 import tifffile as tiff
 
@@ -18,40 +20,20 @@ def verify_z_step(acquisition_script_path, expected_z_step):
     else:
         print(f"Z-step mismatch: Expected {expected_z_step} um, got {z_step_defined_in_script} um")
 
-def verify_channels(images, expected_channels):
-    """
-    Verify that the number of channels in the image data matches the expected channels.
-    This function assumes that the first dimension of the image data represents channels.
-
-    :param images: A numpy array of the image data.
-    :param expected_channels: A list of expected channel names.
-    :return: None
-    """
-    actual_channels = images.shape[0]
-    if actual_channels != len(expected_channels):
-        print(f"Channel mismatch: Expected {len(expected_channels)}, got {actual_channels}")
-    else:
-        print("Channel check passed.")
-
-
 # Load the dataset
-path_to_dataset = "/Users/changboyen/Downloads/2024_AssocRDEng_TakeHome/Exercise1/my_acquisition_2/my_acquisition_NDTiffStack.tif"
+path_to_dataset = r'C:\Users\chang\Desktop\2024_AssocRDEng_TakeHome\Exercise1\my_acquisition_6\my_acquisition_NDTiffStack.tif'
 images = tiff.imread(path_to_dataset)
+print(images.shape)
 
 # Example usage:
-expected_dims = (2, 12, 1024, 1024)  # Adjust based on actual expected dimensions
+expected_dims = (9, 12, 512, 512)  # Adjust based on actual expected dimensions
 expected_channels = ['DAPI', 'FITC']
 expected_z_step = 0.1  # in micrometers
 
 # Verify dimensions
-if images.shape[1:] != expected_dims[1:]:
-    print(f"Dimension mismatch: Expected {expected_dims[1:]}, got {images.shape[1:]}")
+if images.shape[:] != expected_dims[:]:
+    print(f"Dimension mismatch: Expected {expected_dims[:]}, got {images.shape[:]}")
 else:
+    print(images.shape[1:])
     print("Dimension check passed.")
 
-# Verify channels
-verify_channels(images, expected_channels)
-
-# Verify z-step
-acquisition_script_path = "/path/to/acquisition/script"
-verify_z_step(acquisition_script_path, expected_z_step)
