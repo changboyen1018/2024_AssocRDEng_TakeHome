@@ -15,6 +15,7 @@ The exercises are designed to simulate the types of challenges encountered in la
 - **Objective**: Acquire a multi-dimensional .tif dataset with predefined z-slices and channels, representing a typical automated microscopy session.
 - **Implementation**: Utilized `pycromanager` for control of the acquisition process. The script handles z-stacks, multi-channel acquisition, and grid positioning.
 - **Output**: A multi-dimensional .tif dataset with the correct dimensions and metadata.
+- **Verification Code**: A verification code for checking the shape of the TIFF file is included.
 
 ## Exercise 2: Real-time Image Processing
 - **Objective**: Perform a timelapse acquisition and process images in real-time to identify and modify pixels with specific characteristics.
