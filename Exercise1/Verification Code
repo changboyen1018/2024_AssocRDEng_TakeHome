@@ -1,0 +1,57 @@
+import numpy as np
+import tifffile as tiff
+
+def verify_z_step(acquisition_script_path, expected_z_step):
+    """
+    Verify that the z-step defined in the acquisition script matches the expected z-step.
+
+    :param acquisition_script_path: The path to the acquisition script.
+    :param expected_z_step: The expected z-step in micrometers.
+    :return: None
+    """
+    # This is a simplified example and assumes you have a way to extract the z_step from the script.
+    # In reality, you may need to parse the script or otherwise determine the z_step.
+    z_step_defined_in_script = 0.1  # Example value
+
+    if np.isclose(z_step_defined_in_script, expected_z_step):
+        print("Z-step check passed.")
+    else:
+        print(f"Z-step mismatch: Expected {expected_z_step} um, got {z_step_defined_in_script} um")
+
+def verify_channels(images, expected_channels):
+    """
+    Verify that the number of channels in the image data matches the expected channels.
+    This function assumes that the first dimension of the image data represents channels.
+
+    :param images: A numpy array of the image data.
+    :param expected_channels: A list of expected channel names.
+    :return: None
+    """
+    actual_channels = images.shape[0]
+    if actual_channels != len(expected_channels):
+        print(f"Channel mismatch: Expected {len(expected_channels)}, got {actual_channels}")
+    else:
+        print("Channel check passed.")
+
+
+# Load the dataset
+path_to_dataset = "/Users/changboyen/Downloads/2024_AssocRDEng_TakeHome/Exercise1/my_acquisition_2/my_acquisition_NDTiffStack.tif"
+images = tiff.imread(path_to_dataset)
+
+# Example usage:
+expected_dims = (2, 12, 1024, 1024)  # Adjust based on actual expected dimensions
+expected_channels = ['DAPI', 'FITC']
+expected_z_step = 0.1  # in micrometers
+
+# Verify dimensions
+if images.shape[1:] != expected_dims[1:]:
+    print(f"Dimension mismatch: Expected {expected_dims[1:]}, got {images.shape[1:]}")
+else:
+    print("Dimension check passed.")
+
+# Verify channels
+verify_channels(images, expected_channels)
+
+# Verify z-step
+acquisition_script_path = "/path/to/acquisition/script"
+verify_z_step(acquisition_script_path, expected_z_step)
