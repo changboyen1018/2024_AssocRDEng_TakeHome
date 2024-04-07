@@ -3,6 +3,7 @@
 import numpy as np
 import tifffile as tiff
 
+
 def verify_z_step(acquisition_script_path, expected_z_step):
     """
     Verify that the z-step defined in the acquisition script matches the expected z-step.
