@@ -31,6 +31,7 @@ To run the scripts in this repository, ensure that you have Python installed alo
 
 ```bash
 pip install pycromanager scikit-image cellpose opencv-python-headless matplotlib
+```
 
 ## Usage
 Navigate to each exercise directory and run the corresponding script using Python. For detailed usage, refer to the individual scripts within each exercise directory.
