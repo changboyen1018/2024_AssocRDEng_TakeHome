@@ -1,5 +1,5 @@
 # CZ Hub Take Home Test
-### Author: Bo-Yen Chang | changboyen@berkeley.edu
+### Author: Bo-Yen Chang
 
 ## Overview
 This repository contains the solutions for the CZ Hub Associated R&D Engineer position take-home test. Each directory within this repository corresponds to an exercise that tackles different aspects of image acquisition, real-time data processing, and image analysis using Python and various scientific libraries.
