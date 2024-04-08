@@ -11,7 +11,7 @@ The exercises are designed to simulate the types of challenges encountered in la
 - `Exercise2/`: Python script for real-time image analysis and modified .tif dataset reflecting specified pixel modifications.
 - `Exercise3/`: Python script for segmenting cell nuclei from images, measuring their eccentricity, and an eccentricity histogram in .png format.
   
--  `Slides/`: Take Home Test Challenges and Solutions | Link: [Slides](https://docs.google.com/presentation/d/1EOCr6NDMAdhyrNtLBTellKGtD9ebS1zwh85Qzt5pwgw/edit?usp=sharing).
+-  `Slides/`: Take Home Test Challenges and Solutions | Link: [Slides](https://docs.google.com/presentation/d/1EOCr6NDMAdhyrNtLBTellKGtD9ebS1zwh85Qzt5pwgw/edit?usp=sharing)
 -  `Video Recording/`: Work explanation, choice, challenges, solution for each of the 3 exercises | Link: [Video Recording](https://drive.google.com/file/d/1ql4cfYHzXTm_bEFtS7lbxJwlC8pQuxtw/view?usp=sharing)
 ## Exercise 1: Automated Image Acquisition
 - **Objective**: Acquire a multi-dimensional .tif dataset with predefined z-slices and channels, representing a typical automated microscopy session.
