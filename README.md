@@ -1,5 +1,5 @@
 # CZ Hub Take Home Test
-### Author: Bo-Yen Chang
+### Author: Bo-Yen Chang | changboyen@berkeley.edu
 
 ## Overview
 This repository contains the solutions for the CZ Hub Associated R&D Engineer position take-home test. Each directory within this repository corresponds to an exercise that tackles different aspects of image acquisition, real-time data processing, and image analysis using Python and various scientific libraries.
@@ -10,8 +10,9 @@ The exercises are designed to simulate the types of challenges encountered in la
 - `Exercise1/`: Python script and multi-dimensional .tif dataset for automated image acquisition.
 - `Exercise2/`: Python script for real-time image analysis and modified .tif dataset reflecting specified pixel modifications.
 - `Exercise3/`: Python script for segmenting cell nuclei from images, measuring their eccentricity, and an eccentricity histogram in .png format.
--  `Slides/`: Take Home Test Challenges and Solutions | link: [Slides](https://docs.google.com/presentation/d/1EOCr6NDMAdhyrNtLBTellKGtD9ebS1zwh85Qzt5pwgw/edit?usp=sharing).
-
+  
+-  `Slides/`: Take Home Test Challenges and Solutions | Link: [Slides](https://docs.google.com/presentation/d/1EOCr6NDMAdhyrNtLBTellKGtD9ebS1zwh85Qzt5pwgw/edit?usp=sharing).
+-  `Video Recording/`: Work Explanation for each of the 3 exercises, the choices you made, challenges you faced, and how you overcame them. | Link: [Video Recording](https://drive.google.com/file/d/1ql4cfYHzXTm_bEFtS7lbxJwlC8pQuxtw/view?usp=sharing)
 ## Exercise 1: Automated Image Acquisition
 - **Objective**: Acquire a multi-dimensional .tif dataset with predefined z-slices and channels, representing a typical automated microscopy session.
 - **Implementation**: Utilized `pycromanager` for control of the acquisition process. The script handles z-stacks, multi-channel acquisition, and grid positioning.
