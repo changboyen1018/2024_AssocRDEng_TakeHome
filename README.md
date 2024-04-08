@@ -37,7 +37,7 @@ pip install pycromanager scikit-image cellpose opencv-python-headless matplotlib
 ```
 
 ## Usage
-Navigate to each exercise directory and run the corresponding script using Python. For implementation, please refer to the jupyter notebooks in each directory 
+Navigate to each exercise directory and run the corresponding script using Python. For implementation, please refer to the jupyter notebooks in each directory.
 
 ## Acknowledgments
 - Exercise 1 was inspired by examples from the [Pycro-Manager acquisitions tutorial](https://micro-manager.org/apidoc/mmcorej/latest/mmcorej/CMMCore.html).
