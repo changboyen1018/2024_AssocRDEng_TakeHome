@@ -47,6 +47,7 @@ Bo-Yen Chang
 
 Email: changboyen@berkeley.edu
 
+- Slides for Take Home Test [Slides](https://docs.google.com/presentation/d/1EOCr6NDMAdhyrNtLBTellKGtD9ebS1zwh85Qzt5pwgw/edit?usp=sharing).
 ---
 
 Please feel free to reach out if you have any questions or need further clarification on the exercises and their implementations. 
